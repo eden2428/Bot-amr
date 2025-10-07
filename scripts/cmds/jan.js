@@ -2,14 +2,15 @@ const axios = require("axios");
 
 const mahmuds = 
   ["baby",
-   "bby",
    "babu",
-   "bbu",
+   "bby",
    "jan",
    "bot",
    "জান",
    "বেবি",
-"hinata",
+   "hinata",
+   "miakhalifa",
+   "kutta",
 
   ]; 
 
@@ -22,7 +23,7 @@ module.exports = {
   config: {
     name: "bot",
     version: "1.7",
-    author: "MahMUD",
+    author: "EDEN",
     role: 0,
     category: "ai",
     guide: { 
@@ -58,7 +59,7 @@ module.exports = {
       "আমাকে ডাকলে ,আমি কিন্তূ কিস করে দেবো😘 ",  
       "🐒🐒🐒",
       "bye",
-      "naw message daw m.me/mahmud.x07",
+      "BOSS ER ID https://m.me/ibonex.eden",
       "mb ney bye",
       "meww",
       "গোলাপ ফুল এর জায়গায় আমি দিলাম তোমায় মেসেজ",
@@ -92,7 +93,7 @@ module.exports = {
         "আজব তো__😒",
         "আমাকে ডেকো না,আমি ব্যাস্ত আসি🙆🏻‍♀",
         "𝗕𝗯𝘆 বললে চাকরি থাকবে না",
-        "𝗕𝗯𝘆 𝗕𝗯𝘆 না করে আমার বস মানে, MahMUD ,MahMUD ও তো করতে পারো😑?",
+        "𝗕𝗯𝘆 𝗕𝗯𝘆 না করে আমার বস মানে, EDEN, EDEN ও তো করতে পারো😑?",
         "আমার সোনার বাংলা, তারপরে লাইন কি? 🙈",
         "🍺 এই নাও জুস খাও..!𝗕𝗯𝘆 বলতে বলতে হাপায় গেছো না 🥲",
         "হটাৎ আমাকে মনে পড়লো 🙄",
@@ -152,7 +153,7 @@ module.exports = {
     const wordCount = words.length;
 
     if (event.type !== "message_reply" && mahmuds.some(word => message.startsWith(word))) {
-      api.setMessageReaction("🪽", event.messageID, () => {}, true);
+      api.setMessageReaction("👀", event.messageID, () => {}, true);
       api.sendTypingIndicator(event.threadID, true);
 
       if (wordCount === 1) {
@@ -196,4 +197,4 @@ async function getBotResponse(message) {
     console.error("API Error:", error.message || error);
     return "error janu 🥲";
   }
-}
+  }
